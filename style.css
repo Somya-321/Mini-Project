@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    /* background:url(background.jpg); */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+/* /* .conatiner1{
+    background:url( 360_F_184710525_vdZ2bOoDeVMF0Junqlfk9eYARIuuzTUk.jpg)
+    height: */
+
+.main_box{
+    background:url(main_box.jpg);
+    background-size: cover;
+    /* background-origin: content-box; */
+    /* background-repeat: no-repeat; */ 
+    border-top: 25px solid black;
+    border-right: 25px solid black;
+    border-left: 25px solid black;
+    /* padding: 50px ; */
+    height: 100vh;
+}
+.header {
+    /* background: #004080; */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+    padding-left:155px;
+}
+.container2{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #e6f7ff, #c6ebf7);
+
+    border-right: 25px solid black;
+    border-left: 25px solid black;
+    box-sizing: border-box;
+    /* background: url(container2.jpg);
+    background-size: cover; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.intro{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    /* padding-top: 120px; */
+    position: relative;
+    left: 100px;
+    top: 120px ;
+}
+.description{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    text-align: left;
+    position: relative;
+    top: 120px ;
+    /* border: 2px solid black;   */
+}
+#container3{
+    /* background: url(background.jpg); */
+    background: linear-gradient(to bottom right, #e6f7ff, #ccf2ff);
+    /* background-size: cover; */
+    width: 100vw;
+    height: 100vh;
+    border-right: 25px solid black;
+    border-left: 25px solid black;
+    box-sizing: border-box;
+     
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-content: center;
+    gap: 40px;
+}
+.clickable-box {
+    text-decoration: none;  
+}
+
+.card {
+    width: 320px;
+    height: 170px;
+    /* background-color: rgb(80, 192, 192); */
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    color: #003366;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* color: white; */
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px; 
+}
+
+.card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;   
+}
+/* .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+/* .card {
+    transition: all 0.3s ease;
+} */
+
+ 
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    background-color: #56d1d1; /* slightly lighter on hover */
+}
+
+.title {
+    background: #004080;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* .description {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+} */
+.operation {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    background: #004080;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+p{
+    text-align: start;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.explore-more {
+    background-color: #f2f2f2;
+    background: linear-gradient(to bottom right, #e6f7ff, #ccf2ff);
+
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 5px solid #004080;
+}
+
+.explore-more h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #004080;
+}
+/* .explore-more p {
+    /* font-size: 2rem; */
+    /* margin-bottom: 10px; */
+    /* color: #004080; */
+
+.reference-list {
+    /* list-style-type: none;  */
+    /* padding: 0;
+    max-width: 800px;
+    margin: 0 auto; */
+    /* text-align: start; */
+    /* list-style-type: disc; */
+    /* padding-left: 10px; Push the bullets right a bit */
+    max-width: 800px;
+    margin: 60px ;
+    text-align: left;
+} 
+
+.reference-list li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.reference-list a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.reference-list a:hover {
+    text-decoration: underline;
+}
+
