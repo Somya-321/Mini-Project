@@ -12,10 +12,10 @@
         <div class="title"> <h1><b> Drawing </b></h1>
             <h1><b>  Process </b></h1>
         </div>
-        <div class="firstbox">
+        <!-- <div class="firstbox">
             <div><img src="drawing_main.png" class="headerimg"></div>
             <div class="shadowbox"></div> 
-        </div>    
+        </div>     -->
     </div>
 
     <!-- <div class="video-background">
@@ -47,14 +47,42 @@
               <li>Disadvantages of Forging</li>
               <li>Disadvantages of Forging</li>
           </ul>
-      </div>
-      <div class="right">
-          <div class="description"> </div>
+        </div>
+        <div class="right">
+            <div class="description"> 
 
 
 
-          
-      </div>       
+                <button onclick="scrollToTop()" id="backToTop">↑ Top</button>
+            </div>
+            <div id="progressBar"></div>
+        </div>   
+      
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+              const video = document.querySelector('.video-bg');
+              if (video) {
+                video.playbackRate = 0.5; // 0.5x speed, adjust as needed
+              }
+            });
+
+            // Smooth scroll to top
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            window.onscroll = function() {
+            const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (scroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            // Toggle back-to-top button
+            const btn = document.getElementById("backToTop");
+                btn.style.display = scroll > 200 ? "block" : "none";
+            };
+
+
+          </script>
   </div>
 </body>
 </html>

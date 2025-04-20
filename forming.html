@@ -12,10 +12,10 @@
         <div class="title"> <h1><b> Forming </b></h1>
             <h1><b>  Process </b></h1>
         </div>
-        <div class="firstbox">
+        <!-- <div class="firstbox">
             <div><img src="forming.png" class="headerimg"></div>
             <div class="shadowbox"></div> 
-        </div>    
+        </div>     -->
     </div>
     <div id="main">
         <div class="left">
@@ -35,14 +35,71 @@
                <li>Disadvantages of Forging</li>
                <li>Disadvantages of Forging</li>
            </ul>
-       </div>
-       <div class="right">
-           <div class="description"> </div>
+        </div>
+        <div class="right">
+            <div class="description"> 
+                <section>
+                <p>Sheet metal forming is a major technological advancement of the twentieth century, allowing efficient mass production of complex shapes from flat metal sheets. This process involves stretching and shrinking the material in three directions to achieve the final form. Various classification systems have been developed to organize the wide variety of formed shapes, such as Sachs' method, which groups parts based on their contours. In contrast to bulk forming, sheet forming primarily uses tensile forces in the plane of the sheet, avoiding compression to prevent defects like wrinkling or buckling. Maintaining sheet thickness is important to avoid failure during forming.</p>
+                </section>
+                <section>
+                    <h1>Classification</h1>
+                    <ol>
+                        <li><h2>Classification based on Tooling:</h2></li>
+                        <h3>Manual Forming:</h3>
+                        <p>Hand forming is a traditional method used to remove wrinkles that may be left by machine forming. It is typically applied in situations where only a few identical parts are needed or during experimental work. This process involves manual intervention, making it ideal for low-volume production or when fine adjustments are required that machines cannot easily handle.</p>
+                        <h3>Press Forming:</h3>
+                        <p>Press forming is a high-volume sheet metal forming process performed using mechanical or hydraulic presses. Mechanical presses are fast with short strokes, while hydraulic presses operate slower but provide longer strokes for complex shapes. Presses are classified as single-action , double-action , or triple-action based on the number of slides. Single-action presses have one vertical slide, double-action adds a hold-down slide for deep drawing, and triple-action offers added control for intricate operations.</p>
+                        <p>Key tools include a convex punch and concave die, requiring precise alignment. Progressive, compound, and transfer dies enhance efficiency by performing multiple operations in one setup. Clamping pressure prevents wrinkling, applied via hold-down rings or springs. A press brake, a type of single-action press with a long, narrow bed, is used for creating accurate straight bends in sheet metal.</p>
+                        <h3>Rubber Hydroforming:</h3>
+                        <p>Rubber hydroforming is a variation of punch and die forming that utilizes rubber or polyurethane as the die material. The Guerin process involves using a thick rubber blanket and hydraulic pressure to form the sheet, while the Verson-Wheelon process uses a soft rubber bag and internal fluid pressure to create more complex shapes. This method is particularly useful for forming parts with intricate contours that would be challenging to achieve with traditional metal dies.</p>
+                        <h3>Explosive Forming:</h3>
+                        <p>Explosive forming is particularly suited for producing large parts in low production lot sizes. In this process, a sheet-metal blank is placed over a die cavity, and an explosive charge deforms the blank using a shockwave as a frictionless punch. This technique is useful for creating large, complex parts that would be difficult to form using conventional methods, offering both speed and precision in low-volume production.</p>
+                        <li><h2>Classification Based on Material Flow</h2></li>
+                        <h3>Bending and Contouring:</h3>
+                        <p>Bending and contouring involve various techniques to shape metal into cylindrical or conical forms. Bending rolls are used to form such shapes, with a third roll sometimes employed to prevent buckling in thin-gauge sheets. Wiper-type equipment ensures uniform deformation along the length of the part. Additionally, wrap forming applies both compression and tensile stress to prevent buckling and achieve the desired contour, making it effective for producing complex shapes.</p>
+                        <h3>Spinning:</h3>
+                        <p>Spinning is a process used to create deep, circular-symmetric parts such as tank heads and television cones. In this method, the metal is clamped onto a rotating spindle and progressively formed into shape. Shear-spinning is a variant that reduces part thickness, while tube spinning focuses on reducing the wall thickness of tubes. Spinning is ideal for creating parts with a high degree of symmetry and precision.</p>
+                        <h3>Stretch Forming</h3>
+                        <p>Stretch forming is a sheet metal forming process in which the material is plastically deformed by the application of primarily tensile forces, causing it to stretch over a form block or die. The process evolved from stretcher-leveling techniques used in rolled sheet metal. Stretch forming is widely employed in the aerospace industry to fabricate components with large radii of curvature, often involving double curvature geometries.</p>
+                        <p>The equipment consists of a vertical hydraulic ram with a punch and gripping jaws. The sheet is first draped over the form block with light tension, then plastically stretched to its final shape. Unlike wrap forming, the material is first positioned before full tension is applied.</p>
+                        <p>The method minimizes springback due to uniform stress distribution, but requires materials with good ductility.</p>
+                    </ol>
+                    
+                    
+
+                </section>
+
+                <button onclick="scrollToTop()" id="backToTop">↑ Top</button>
+            </div>
+
+            <div id="progressBar"></div>
+        </div>   
+       
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+          const video = document.querySelector('.video-bg');
+          if (video) {
+            video.playbackRate = 0.5; // 0.5x speed, adjust as needed
+          }
+        });
+
+        // Smooth scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.onscroll = function() {
+        const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (scroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+
+        // Toggle back-to-top button
+        const btn = document.getElementById("backToTop");
+            btn.style.display = scroll > 200 ? "block" : "none";
+        };
 
 
-
-           
-       </div>       
+        </script>
    </div>
 </body>
 </html>
