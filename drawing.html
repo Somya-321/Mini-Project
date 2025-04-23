@@ -12,44 +12,104 @@
         <div class="title"> <h1><b> Drawing </b></h1>
             <h1><b>  Process </b></h1>
         </div>
-        <!-- <div class="firstbox">
-            <div><img src="drawing_main.png" class="headerimg"></div>
-            <div class="shadowbox"></div> 
-        </div>     -->
+         
     </div>
-
-    <!-- <div class="video-background">
-        <div class="video-foreground">
-          <iframe
-            src="https://www.youtube.com/embed/MtkgKwD-lGQ?start=30&end=60&autoplay=1&mute=1&controls=0&showinfo=0&loop=1&playlist=MtkgKwD-lGQ&modestbranding=1"
-            frameborder="0"
-            allow="autoplay"
-            allowfullscreen>
-          </iframe>
-        </div>
-    </div> -->
 
     <div id="main">
       <div class="left">
           <h3>Table of Contents</h3>
           <ul>
-              <li> Introduction</li>
-              <li> History of Forging</li>
-              <li> Classification of Forging</li>
-              <li> Net-Shape or Near Net-Shape Forging</li>
-              <li> Forging Operations</li>
-              <li>Forging Equipment</li>
-              <li>Selection of Forging Machine</li>
-              <li>Characteristics of Forging</li>
-              <li>Applications of Forging</li>
-              <li>Forging Defects</li>
-              <li>Advantages of Forging</li>
-              <li>Disadvantages of Forging</li>
-              <li>Disadvantages of Forging</li>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#classification"> Classification of Forging</a></li>
+              <li><a href="#residual"> Residual Stresses in Rods, Wires, and Tubes</a></li>
+              <li><a href="#equipment"> Equipment and Tools
+                <ul><li>Drawing Machines</li>
+                <li>Drawing Dies</li>
+                <li>Lubrication Systems</li></ul></a>
+              </li>
+              <li><a href="#defects">Defects in Drawing Process</a></li>
+              <li><a href="#applications">Applications of the Metal Drawing Process</a></li>
           </ul>
         </div>
         <div class="right">
             <div class="description"> 
+              <section id="introduction">
+              <p>Drawing is a metal forming process where a workpiece is pulled through a die using tensile force, primarily resulting in plastic deformation due to compressive stresses at the die interface. This process enables the production of long products with constant cross-sections, offering excellent surface finish and precise dimensional control. Drawing is considered a net-shape metal forming process, characterized by high material utilization and the ability to produce components with enhanced mechanical properties.
+              </p>
+              <div><a href=" https://www.sciencedirect.com/topics/engineering/cold-drawing#:~:text=Typical%20forms%20produced%20include%20wires,diameter%20(ASM%2C%201993)."></a><img src="Eimg1.png" class="img"> </div>
+            </section>
+            <section id="classification">  
+
+            <h2>Classification of Drawing Process</h2>
+            
+                <h3>Wire, rod and bar drawing</h3>
+                <p>The reduction of a solid bar or rod through successive drawing stages is termed bar drawing, rod drawing, or wire drawing, based on the diameter of the final product. The cross-section of a bar, rod, or wire is reduced by pulling it through a die opening. During this process, the metal is deformed by a combination of tensile and compressive stresses.</p>
+                <p>Rod and wire drawing share fundamental principles but differ in equipment due to size constraints. Rigid rods and tubes are processed using drawbenches, where the material is pointed, drawn through a die, and pulled via chain or hydraulic mechanisms. Drawing speeds range from 150 mm/s to 1500 mm/s, with drawbenches supporting up to 1 MN of force and 30 meters of runout.</p>
+                <div><a href="https://www.researchgate.net/figure/Drawing-of-bar-rod-or-wire-82-Drawing-Equipment-Bar-drawing-is-accomplished-on-a_fig1_342233597"> <img src="Eimg2.png" class="img"></a></div>
+                
+                <h3>Tube drawing</h3>
+                <p>It is a metalworking process used to reduce the diameter of a tube by drawing it through a die. This process is versatile, making it suitable for both large-scale and small-scale production.Tubes or hollow cylinders, typically produced through hot-forming techniques such as extrusion or piercing and rolling, are often cold-finished using drawing processes.</p>
+                <p>There are three primary tube-drawing methods: tube sinking, plug drawing, and mandrel drawing.</p>
+
+                <ol>
+                    <li><h4>Tube Sinking:</h4></li>
+                    <p> In this process, the tube is drawn through a die without any internal support. As a result, the tube's wall may thicken slightly, and the internal surface often lacks uniformity. Because significant shearing occurs at both the die entry and exit, this method involves higher redundant strain and allows less deformation compared to other techniques.</p>
+                    <li><h4>Plug Drawing:</h4></li>
+                    <p> A plug, either cylindrical or conical, is inserted inside the tube during drawing. This plug helps control both the inner and outer diameters of the tube, offering greater dimensional accuracy than tube sinking. However, due to increased friction between the plug and the tube, the reduction in cross-sectional area is generally limited to about 30%.A variation of this method uses a floating plug, which is not fixed but is instead carefully matched to float within the die. This design allows for greater reductions—up to 45%—while maintaining lower drawing forces compared to a fixed plug. It also enables continuous drawing and coiling of long tube lengths, though precise tool design and effective lubrication are critical to its success.</p>
+                    <li><h4>Mandrel Drawing:</h4></li>
+                    <p>This method uses a long, hard rod or wire (the mandrel) that extends through the entire length of the tube and is drawn together with it through the die (Fig. 19-9d). The drawing force is partly applied at the tube’s exit and partly through friction between the mandrel and the tube. Because the mandrel moves at the same velocity as the exiting tube, and faster than the metal within the die, it introduces a forward frictional drag that offsets the backward drag caused by the stationary die.</p>
+                    <p>After drawing, the mandrel must be removed using a process known as reeling, which slightly enlarges the tube’s diameter and may affect dimensional accuracy.</p></ol>
+                    <div><a href="https://www.sciencedirect.com/topics/materials-science/tube-drawing"><img src="Eimg3.png" class="img"> </a></div>
+                    
+                    <p><h4>Common methods of tube drawing: (a) sinking, (b) fixed plug drawing, (c) mandrel drawing and (d) floating plug drawing.</h4></p>
+                </section>
+                <section id="residual">
+                <h2>Residual Stresses in Rods, Wires, and Tubes</h2>
+                   <p>During cold drawing, residual stresses develop in rods, wires, and tubes, depending on the level of reduction. For small reductions (under 1%), compressive stresses form at the surface and tensile stresses at the core. With larger reductions, this pattern reverses—tensile at the surface and compressive at the center.</p>
+                   <p>In tube sinking, stresses are more uniformly distributed, with tensile stress on the outer surface and compressive stress on the inner surface. Similar patterns appear in plug and mandrel drawing. Residual stress can be reduced using tandem drawing, where a minor second reduction follows the main pass. This improves dimensional accuracy and reduces stress buildup.</p>
+                  </section>
+                <section id="equipment">
+                <h2>Equipment and Tools</h2>
+                <p>Cold drawing processes employ specialized equipment such as wire drawing machines, draw benches, and precision-engineered dies to accurately reduce the cross-sectional area and modify the shape of metal workpieces.</p>
+                <ol>
+                  <li><h3>Drawing Machines:</h3></li>
+                  <p>Drawbenches are primarily used for drawing large-sized workpieces such as thick rods and tubes that cannot be coiled. The drawbench uses a chain or hydraulic mechanism to pull the metal through the die, offering controlled, high-force drawing over longer distances. In contrast, block drawing machines are employed for smaller diameter rods and wires, which can be coiled. These machines allow continuous drawing through multiple dies in a compact setup, optimizing floor space and production efficiency. </p>
+                  <div><a href="https://www.ijsdr.org/viewpaperforall.php?paper=IJSDR1903034"><img src="Eimg4.png" class="img"></a></div>
+                  <a href="https://www.ijsdr.org/viewpaperforall.php?paper=IJSDR1903034" target="_blank" class="btn-tooltip" title="Click to read the full paper">🔗</a>
+
+                  <li><h3>Drawing Dies:</h3></li>
+                  <p>The drawing die is a critical component that shapes the metal during the drawing process.  The dies are commonly made of cemented carbide or industrial diamond for fine wires, and the die nib is protected in a thick steel casing. It consists of key die features and structural elements such as the drawing cone, defined by the approach angle; the bell, which guides the wire into the die; the bearing or land, a straight cylindrical section downstream; and the back relief, a chamfered exit section. These features collectively influence the drawing process and are critical to its efficiency and precision.</p>
+                  <div><a href=" https://www.sciencedirect.com/topics/engineering/die-angle#:~:text=of%20this%20angle.-,The%20flared%20profile%20upstream%20from%20the%20drawing%20cone%20is%20referred,is%20described%20as%20back%20relief."><img src="Eimg5.png" class="img"></a></div>
+                  <a href="https://www.sciencedirect.com/topics/engineering/die-angle#:~:text=of%20this%20angle.-,The%20flared%20profile%20upstream%20from%20the%20drawing%20cone%20is%20referred,is%20described%20as%20back%20relief." target="_blank" class="btn-tooltip" title="Click to read the full paper">🔗</a>
+
+                  <li> <h3>Lubrication Systems:</h3></li>
+                   <p>Lubrication plays a key role in wire drawing by reducing friction, drawing force, and die wear. Rods are cleaned before drawing, and coatings like oxalates or metallic films are applied to enhance lubricity. Dry drawing uses solid lubricants such as soap powders to reduce friction between the wire and die. Wet drawing uses oil-based lubricants with EP additives to improve cooling and surface finish, ensuring efficient and consistent wire production.</p></li></ol>
+                  </section>
+                <section id="defects">
+              <h2>Defects in Drawing Process</h2>
+              <p>The metal drawing process can introduce several defects that adversely affect the quality and performance of the final product. A primary defect in rod and wire drawing is center burst (also known as chevron cracking or cupping), typically caused by low die angles and reductions, or pre-existing material flaws such as seams or slivers. Increasing the die angle and friction conditions raises the critical reduction threshold, thereby minimizing the risk of such fractures.</p>
+
+              <p>Other notable defects include surface cracks due to excessive tensile forces or poor lubrication, and die wear, which results in dimensional inaccuracies and surface imperfections. Wrinkling may arise from material instability, while size variation is often attributed to inconsistent drawing forces or improper die design. The process can also introduce residual stresses, necking from high tension, surface irregularities, fractures in brittle materials, edge cracking due to stress concentrations, and changes in grain structure, which can compromise the metal's mechanical integrity.</p>
+              <a href="https://testbook.com/mechanical-engineering/metal-drawing-process" target="_blank" class="btn-tooltip" title="Click to read the full paper">🔗</a>
+            </section>
+          <section id="applications">
+          <h2>Applications of the Metal Drawing Process</h2>
+          <p>The metal drawing process finds extensive use across various industries due to its ability to produce long products with small and precise cross-sectional areas. Key applications include:</p>
+            <ul>
+              <li><b>Electrical Industry: </b>Widely used for manufacturing wires from materials such as copper and aluminium, which are essential for electrical transmission and components.</li>
+              <li><b>Rod and Tube Production: </b>Employed to produce small diameter rods and tubes used in structural and mechanical applications.</li>
+              <li><b>Spring Manufacturing: </b>Utilised to create helical springs for use in automotive, mechanical, and industrial systems.</li>
+              <li><b>Fasteners: </b>Applied in the production of screws, bolts, nails, and other fastening elements requiring precision and strength.</li>
+              <li><b>Precision Components: </b> Enables the fabrication of intricate and accurate components for critical sectors like automotive and aerospace.</li>
+              <li><b>Medical Devices: </b>Used to produce precise metal parts for medical instruments and equipment.</li>
+            </section>
+            <h1>Microstructure:</h1>
+                <div><a href="https://www.sciencedirect.com/science/article/pii/S223878542100466X"><img src="Dmicro.jpeg" class="img"></a></div>
+
+               
+
+
+
 
 
 

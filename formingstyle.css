@@ -9,12 +9,6 @@
     background-size: cover;
     display: flex;
 } 
-/* .firstbox{
-    position: relative;
-    height: 400px;
-    width: 600px;
-    display: flex;
-} */
 #progressBar {
     position: fixed;
     top: 0;
@@ -44,7 +38,7 @@
 
 .title {
     position: absolute;
-    bottom: -50px;  /* Start from below */
+    bottom: -50px;   
     left: 40%;
     top: 35%;
     transform: translate(-50%, 100%);
@@ -57,55 +51,22 @@
     animation: slideUpSmooth 1.5s ease-out forwards;
 }
 
-/* Animation: Move title from bottom to center */
+ 
 @keyframes slideUpSmooth {
     0% {
-        /* bottom: -50px; */
+         
         transform: translate(-50%, 100%);
 
         opacity: 0;
     }
     100% {
-        /* bottom: 50%; */
+         
         transform: translate(-50%, -50%);
 
         opacity: 1;
-        /* transform: translate(-50%, -100%); */
+         
     }
 }
-
-
-/* .headerimg{
-    height: 400px;
-    width: 600px;
-    position: relative;
-    left: 150px;
-    top: 200px;
-    border-radius: 25px;
-    z-index: 2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-
-}
-.shadowbox{
-    height: 400px;
-    width: 600px;
-    position: absolute;
-    left: 165px;
-    top: 215px;
-    border-radius: 25px;
-    background-color: #5c5a5a; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-}
-.firstbox:hover .headerimg {
-    transform: translate(-5px,-5px);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); 
-}
-
-.firstbox:hover .shadowbox {
-    transform: translate(5px, 5px); 
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
-} */
 
 #main{
     width: 100vw;
@@ -124,19 +85,16 @@
     text-align: left;
     font-size: 18px;
     font-family:  sans-serif;
-    /* border: 2px solid black; */
     background-color: #f3ecece9;
     border-radius: 10px;
     align-items: left;
     padding: 30px;
-    /* margin-left: 30px; */
- }
+}
 .left ul li {
     list-style-type: disc;
     margin-bottom: 12px;
     font-size: 17px;
     line-height: 1.6;
-
 }
 
 .left ul li a {
@@ -145,14 +103,12 @@
     transition: all 0.3s ease;
     padding: 4px;
     border-radius: 6px;
-
 }
 
 .left ul li a:hover {
     background-color: #e0dede;
     padding-left: 8px;
     color: #007bff;
-
 }
 .left {
     position: sticky;
@@ -163,11 +119,8 @@
     width: 850px;
     height: auto;
     text-align: left;
-    /* font-size: 40px; */
     font-family:  sans-serif;
-    /* border: 2px solid black; */
     padding: 30px;
-    /* display: flex; */
     display: flex;
     flex-direction: column;
 }
@@ -175,7 +128,6 @@
 .description{
     text-align: left;
     font-size: 20px;
-    /* color: #EDF4F2; */
 } 
 p,ul,h2,h1,ol,h4,h3 {
     margin-bottom: 20px;
@@ -198,14 +150,13 @@ p,ul,ol{
  
 .img:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border: 1px solid #555;  /* subtle dark border */
+    border: 1px solid #555;   
 
     cursor: pointer;
 }
 .micro{
     width: 800px;
     height: 600px;
-    /* text-align: center; */
 }
 
 
@@ -213,7 +164,7 @@ p,ul,ol{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    display: none; /* Hidden by default */
+    display: none;  
     background-color: #f3ecec;
     color: #333;
     border: 2px solid #ccc;
@@ -237,11 +188,11 @@ p,ul,ol{
 html {
     scroll-behavior: smooth;
 }
-/* Button style */
+ 
 .btn-tooltip {
     display: inline-block;
     padding: 10px;
-    background-color: #f3ecece9; /* Blue color */
+    background-color: #f3ecece9;  
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -252,10 +203,10 @@ html {
 }
 
 .btn-tooltip:hover {
-    background-color: #a6aab0; /* Darker blue on hover */
+    background-color: #a6aab0;  
 }
 
-/* Tooltip style */
+
 .btn-tooltip::after {
     content: attr(title);
     position: absolute;

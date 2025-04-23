@@ -1,8 +1,8 @@
 *{
     margin:0;
     padding:0;
- }
- /* Stylish Scroll Progress Bar */
+}
+
 #progressBar {
     position: fixed;
     top: 0;
@@ -14,10 +14,7 @@
     z-index: 9999;
     border-radius: 0 8px 8px 0;
     transition: width 0.2s ease-out;
-}
-
-
-    
+}   
 
 .video_container{ 
     position: relative;  
@@ -33,7 +30,7 @@
 }
 .video-title {
     position: absolute;
-    bottom: -50px;  /* Start from below */
+    bottom: -50px;   
     left: 50%;
     top: 50%;
     transform: translate(-50%, 100%);
@@ -46,23 +43,17 @@
     animation: slideUpSmooth 1.5s ease-out forwards;
 }
 
-/* Animation: Move title from bottom to center */
+
 @keyframes slideUpSmooth {
     0% {
-        /* bottom: -50px; */
         transform: translate(-50%, 100%);
-
         opacity: 0;
     }
     100% {
-        /* bottom: 50%; */
         transform: translate(-50%, -50%);
-
         opacity: 1;
-        /* transform: translate(-50%, -100%); */
     }
 }
-
 
 #main{
     width: 100vw;
@@ -74,15 +65,13 @@
     align-content: center;
     padding-top: 10px;
     margin-top: 60px;
-    /* margin-inline: 30px; */
- }
+  }
 .left{
     width: 320px;
     height: 700px;
     text-align: left;
     font-size: 18px;
     font-family:  sans-serif;
-    /* border: 2px solid black; */
     background-color: #f3ecece9;
     border-radius: 10px;
     align-items: left;
@@ -92,9 +81,8 @@
     transition: all 0.3s ease;
  }
  .left ul {
-    padding-left: 20px; /* ensures bullet alignment */
-}
-
+    padding-left: 20px;  
+ }
 .left ul li {
     list-style-type: disc;
     margin-bottom: 12px;
@@ -128,11 +116,8 @@
     width: 850px;
     height: auto;
     text-align: left;
-    /* font-size: 40px; */
     font-family:  sans-serif;
-    /* border: 2px solid black; */
     padding: 30px;
-    /* display: flex; */
     display: flex;
     flex-direction: column;
 }
@@ -140,8 +125,7 @@
 .description{
     text-align: left;
     font-size: 20px;
-    /* color: #EDF4F2; */
-} 
+}
 p,ul,h2,ol,h4,h3,a {
     margin-bottom: 20px;
     line-height: 30px;
@@ -157,26 +141,22 @@ ul,ol{
  
 
 .img {
-    /*  *width: 100%; /* Or your desired width */
-    /* max-width: 700px; */
+     
     border: 1px solid transparent ;
     border-radius: 10px;
     transition: box-shadow 0.3s ease, border 0.3s ease;
 }
 
-/* Zoom-in on hover */
-.img:hover {
+ .img:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    border: 1px solid #555;  /* subtle dark border */
-
+    border: 1px solid #555;  
     cursor: pointer;
 }   
 
 .micro{
     width: 800px;
     height: 400px;
-    /* text-align: center; */
-}
+ }
 .video iframe {
     width: 350px;
     height: 500px;
@@ -185,24 +165,12 @@ ul,ol{
     width: 100vw;
     height: 100vh;
 }
-/* .back-button {
-    width: 80px;
-    height: 30px;
-    display: inline-block;
-     margin-top: 30px;
-    margin-left: 40px;
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 20px;
-} */
+ 
 #backToTop {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    display: none; /* Hidden by default */
+    display: none;  
     background-color: #f3ecec;
     color: #333;
     border: 2px solid #ccc;
@@ -214,7 +182,6 @@ ul,ol{
     z-index: 1000;
     transition: all 0.3s ease;
     font-family: sans-serif;
-
 }
 
 #backToTop:hover {
@@ -226,11 +193,11 @@ ul,ol{
 html {
     scroll-behavior: smooth;
 }
-/* Button style */
+ 
 .btn-tooltip {
     display: inline-block;
     padding: 10px;
-    background-color: #f3ecece9; /* Blue color */
+    background-color: #f3ecece9;  
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -241,10 +208,10 @@ html {
 }
 
 .btn-tooltip:hover {
-    background-color: #a6aab0; /* Darker blue on hover */
+    background-color: #a6aab0;  
 }
 
-/* Tooltip style */
+ 
 .btn-tooltip::after {
     content: attr(title);
     position: absolute;
@@ -256,7 +223,6 @@ html {
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
-
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;
